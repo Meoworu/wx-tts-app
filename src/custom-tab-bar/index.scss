@@ -7,7 +7,7 @@
   background: #fff;
   display: flex;
   padding-bottom: env(safe-area-inset-bottom);
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -2px 8px RGBA(143,143,255,0.2);
 
   &-item {
     flex: 1;
@@ -17,13 +17,14 @@
     align-items: center;
     flex-direction: column;
     padding: 10px;
+    color: #3f3f3f;
 
     &.selected {
-      color: #1296db;
+      color: RGBA(143,143,255,1);
     }
 
     &-text {
-      font-size: 28px;
+      font-size: 20px;
       margin-top: 8px;
     }
   }

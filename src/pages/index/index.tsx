@@ -12,8 +12,6 @@ export default function CreationPage () {
     <View className='creation-page'>
       <NavigationBar
         title='首页'
-        backgroundColor='#f5f7fa'
-        textColor='#333'
       />
       {/* <View className='page-header'>
         <View className='page-title'>制作提示</View>

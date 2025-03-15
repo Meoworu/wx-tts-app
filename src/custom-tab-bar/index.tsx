@@ -1,6 +1,7 @@
 import { View } from '@tarojs/components';
 import Taro, { useRouter } from '@tarojs/taro';
 import Icon from '../components/Icon';
+import { memo } from 'react';
 import './index.scss';
 import classNames from 'classnames';
 
@@ -33,8 +34,7 @@ const tabList: TabItem[] = [
     iconName: '\ue8bb'
   }
 ];
-
-export default function CustomTabBar() {
+function CustomTabBar() {
   const router = useRouter();
   const switchTab = (item: TabItem) => {
     Taro.switchTab({
@@ -50,10 +50,12 @@ export default function CustomTabBar() {
           className={classNames('tab-bar-item', {selected: router.path.includes(item.pagePath)})}
           onClick={() => switchTab(item)}
         >
-          <Icon size={24}>{item.iconName}</Icon>
+          <Icon size={18}>{item.iconName}</Icon>
           <View className='tab-bar-item-text'>{item.text}</View>
         </View>
       ))}
     </View>
   );
 }
+
+export default memo(CustomTabBar);

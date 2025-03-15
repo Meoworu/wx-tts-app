@@ -1,13 +1,11 @@
 .ling-nav-bar {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     z-index: 100;
-    
+    background-color: RGB(204,204,255);
     .nav-content {
         position: relative;
-        height: 44px;
+        height: 100%;
         display: flex;
         align-items: center;
         padding: 0 12px;
@@ -27,7 +25,7 @@
         .nav-title {
             flex: 1;
             text-align: center;
-            font-size: 17px;
+            font-size: 32px;
             font-weight: 500;
         }
 
