@@ -1,11 +1,16 @@
-// babel-preset-taro 更多选项和默认值：
-// https://docs.taro.zone/docs/next/babel-config
 module.exports = {
   presets: [
     ['taro', {
       framework: 'react',
       ts: true,
       compiler: 'webpack5',
+      hot: true,
+      useBuiltIns: 'usage',
+      corejs: 3
     }]
+  ],
+  plugins: [
+    '@babel/plugin-transform-optional-chaining',
+    '@babel/plugin-transform-nullish-coalescing-operator'
   ]
 }

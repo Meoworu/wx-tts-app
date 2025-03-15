@@ -1,88 +1,33 @@
 .creation-page {
   display: flex;
   flex-direction: column;
-
-  .page-header {
-    .page-title {
-      font-size: 36px;
-      font-weight: bold;
-      color: #1f1f1f;
-    }
-  }
-
-  .prompt-content {
+  .home-content-box{
     flex: 1;
-    .prompt-input {
-      width: 100%;
-      min-height: 200px;
-      background: #fff;
-      border-radius: 16px;
-      padding: 24px;
-      font-size: 28px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-    }
-    .input-placeholder {
-      color: #999;
+    height: 50px;
+    margin-top: -200px;
+    padding: 0 24px;
+    .home-content{
+        height: 70%;
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 24px;
+        border: 1px solid RGBA(204,204,255,1);
     }
   }
-
-  .tool-options {
+  .home-timbre-box{
+    
+  }
+  .home-footer{
+    margin-top: 24px;
+    padding: 0 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-
-    .tool-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-
-      .tool-icon {
-        width: 64px;
-        height: 64px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #f0f2f5;
-        border-radius: 50%;
-
-        .iconfont {
-          font-size: 36px;
-          color: #666;
+    .primary-button{
+        margin: 0;
+        &.max{
+            flex-grow: 1;
+            margin-right: 24px;
         }
-      }
-
-      .tool-name {
-        font-size: 24px;
-        color: #666;
-      }
-    }
-  }
-
-  .action-bar {
-    display: flex;
-    gap: 16px;
-
-    .action-button {
-      flex: 1;
-      height: 88px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      border-radius: 44px;
-      font-size: 28px;
-      color: #333;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-
-      &.primary {
-        background: linear-gradient(90deg, #4a90e2, #6cb2e8);
-        color: #fff;
-      }
     }
   }
 }

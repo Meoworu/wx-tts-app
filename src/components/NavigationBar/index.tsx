@@ -21,7 +21,6 @@ function NavigationBar({
     showBack = false,
     onBack,
     rightContent,
-    backgroundColor = '#00D4E3',
     textColor = '#ffffff'
 }: PropsType) {
     const handleBack = () => {
@@ -38,7 +37,6 @@ function NavigationBar({
           style={{ 
                 height: `${NAVIGATION_BAR_HEIGHT}px`, 
                 paddingTop: `${statusBarHeight}px`,
-                backgroundColor,
                 color: textColor
             }}
         >
