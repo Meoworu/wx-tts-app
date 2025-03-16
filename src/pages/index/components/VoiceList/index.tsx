@@ -1,5 +1,6 @@
 import { View, Image, ScrollView } from '@tarojs/components'
 import './index.scss'
+import IconFont from '@/components/IconFont'
 
 interface VoiceItem {
   id: string
@@ -12,7 +13,6 @@ const mockVoices: VoiceItem[] = [
   { id: '2', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '磁性男声' },
   { id: '3', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '童声' },
   { id: '4', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '老年声' },
-  { id: '5', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '机器人声' },
 ]
 
 export default function VoiceList() {
@@ -24,6 +24,10 @@ export default function VoiceList() {
           <View className='voice-name'>{voice.name}</View>
         </View>
       ))}
+          <View key='more' className='voice-item'>
+          <IconFont size={44} className='voice-avatar'>&#xe649;</IconFont>
+          <View className='voice-name'>更多</View>
+        </View>
     </View>
   )
 }

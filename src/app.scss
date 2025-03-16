@@ -3,11 +3,12 @@ $button-bg-color: #aeaef4;
 $button-bg-color-1: RGB(153,153,255);
 Page{
     height: 100%;
-    background-color: #eeeeee;
+    background-color: #efefef;
 }
 View,Text{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .primary-button {
@@ -17,7 +18,8 @@ View,Text{
 }
 
 .creation-page{
-    background-color: #eeeeee;
+    background-color: #efefef;
     position: relative;
-    height: 88vh;
+    height: 100%;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 100px);
 }

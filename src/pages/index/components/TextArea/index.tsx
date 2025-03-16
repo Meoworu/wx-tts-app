@@ -1,7 +1,8 @@
 import { View, Text, Textarea } from '@tarojs/components'
 import { useState } from 'react'
 import './index.scss'
-import Icon from '../../../../components/Icon'
+import IconFont from '@/components/IconFont'
+// import Icon from '../../../../components/Icon'
 
 interface TextAreaProps {
   maxLength?: number
@@ -35,7 +36,7 @@ export default function TextArea({
       />
           <View className='action-box'>
               <View className='delete'>
-                  {/* <Icon>你好</Icon> */}
+                  <IconFont size={12}>&#xe61a;</IconFont>
                   <Text>清除文本</Text>
               </View>
           <View className='word-count'>

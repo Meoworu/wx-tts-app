@@ -35,8 +35,8 @@ function NavigationBar({
         <View 
           className='ling-nav-bar' 
           style={{ 
-                height: `${NAVIGATION_BAR_HEIGHT}px`, 
-                paddingTop: `${statusBarHeight}px`,
+              height: `${NAVIGATION_BAR_HEIGHT + (statusBarHeight || 0)}px`, 
+              paddingTop: `${statusBarHeight}px`, 
                 color: textColor
             }}
         >
