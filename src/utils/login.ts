@@ -2,6 +2,16 @@
 import { useEffect } from 'react';
 import Taro from '@tarojs/taro';
 
+interface UserInfo {
+    avatarUrl: string
+    city: string
+    country: string
+    gender: number
+    language: string
+    nickName: string
+    province: string
+}
+
 export const useAuth = () => {
     useEffect(() => {
         // Taro.getSetting：获取用户的当前设置。返回值中只会出现小程序已经向用户请求过的权限。
@@ -71,5 +81,5 @@ export const saveUserInfo = (res: Taro.getUserInfo.SuccessCallbackResult) => {
 
 // 获取存储的用户信息
 export const getStoredUserInfo = () => {
-    return Taro.getStorageSync('userInfo');
+    return Taro.getStorageSync('userInfo') as UserInfo;
 };
