@@ -1,4 +1,9 @@
 export default defineAppConfig({
+    permission: {
+        'scope.userInfo': {
+          desc: '用于完善会员信息'
+        }
+      },
   pages: [
     'pages/index/index',
     'pages/tools/index',

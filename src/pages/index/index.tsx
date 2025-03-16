@@ -5,6 +5,7 @@ import './index.scss'
 import Background from '@/components/Background'
 import TextArea from './components/TextArea'
 import VoiceList from './components/VoiceList'
+import AuthPage from '@/components/AuthPage'
 
 export default function CreationPage () {
   useLoad(() => {
@@ -29,6 +30,7 @@ export default function CreationPage () {
         <Button type='primary' className='primary-button max'>开始创作</Button>
         <Button type='primary' className='primary-button'>分享微信</Button>
       </View>
+      <AuthPage />
     </View>
   )
 }

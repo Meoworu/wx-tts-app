@@ -56,7 +56,6 @@ function CustomTabBar() {
                     </View>
                 ))}
             </View>
-
         </View>
     );
 }

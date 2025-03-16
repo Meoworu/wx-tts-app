@@ -49,6 +49,17 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
       },
       webpackChain(chain) {
         chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin)
+        chain.module
+          .rule('scss')
+          .oneOf('normal')
+          .use('sass-loader')
+          .tap(options => ({
+            ...options,
+            sourceMap: false,
+            sassOptions: {
+              outputStyle: 'expanded'
+            }
+          }))
       }
     },
     h5: {
@@ -57,7 +68,8 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
       output: {
         filename: 'js/[name].[hash:8].js',
         chunkFilename: 'js/[name].[chunkhash:8].js'
-      },
+        },
+        esnextModules: ['taro-ui'],
       miniCssExtractPluginOption: {
         ignoreOrder: true,
         filename: 'css/[name].[hash].css',
@@ -78,6 +90,17 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
       },
       webpackChain(chain) {
         chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin)
+        chain.module
+          .rule('scss')
+          .oneOf('normal')
+          .use('sass-loader')
+          .tap(options => ({
+            ...options,
+            sourceMap: false,
+            sassOptions: {
+              outputStyle: 'expanded'
+            }
+          }))
       }
     },
     rn: {
