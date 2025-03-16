@@ -1,17 +1,23 @@
 $theme-color: RGBA(143,143,255,1);
-$button-bg-color: #6666cc;
-
+$button-bg-color: #aeaef4;
+$button-bg-color-1: RGB(153,153,255);
+Page{
+    height: 100%;
+    background-color: #eeeeee;
+}
 View,Text{
   margin: 0;
   padding: 0;
 }
 
 .primary-button {
-  background-color: $button-bg-color !important;
-  border-color: $button-bg-color !important;
+  background: linear-gradient(90deg, $button-bg-color, $button-bg-color-1) !important;
+  border:none;
+  font-size: 28px;
 }
 
 .creation-page{
+    background-color: #eeeeee;
     position: relative;
     height: 88vh;
 }

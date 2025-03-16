@@ -8,7 +8,7 @@ interface VoiceItem {
 }
 
 const mockVoices: VoiceItem[] = [
-  { id: '1', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '温柔女声' },
+  { id: '1', avatar: 'https://lf9-appstore-sign.oceancloudapi.com/ocean-cloud-tos/FileBizType.BIZ_BOT_ICON/6591786_1741142333887266657.jpg?lk3s=db11200b&x-expires=1744679644&x-signature=tZo9nYn5huXSwQ1fDjde9QswhjM%3D', name: '温柔女声' },
   { id: '2', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '磁性男声' },
   { id: '3', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '童声' },
   { id: '4', avatar: 'https://s.qunarzz.com/f_cms/2025/1742030063687_091222632.jpg', name: '老年声' },
