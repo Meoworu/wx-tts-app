@@ -51,7 +51,7 @@ function CustomTabBar() {
                       className={classNames('tab-bar-item', { selected: router.path.includes(item.pagePath) })}
                       onClick={() => switchTab(item)}
                     >
-                        <Icon size={18} name={item.iconName} />
+                        <Icon name={item.iconName} />
                         <View className='tab-bar-item-text'>{item.text}</View>
                     </View>
                 ))}

@@ -26,8 +26,14 @@ export default function Profile() {
                   />
               </View>
               <View className='profile-info'>
-                  <Text className='nickname'>{userInfo.nickName}</Text>
-                  <Text className='desc'>{userInfo.city}</Text>
+                  <View>
+                    <Text className='nickname'>{userInfo.nickName}</Text>
+                      {/* <Text className='desc'>{userInfo.city}</Text> */}
+                      <View className='login'>
+                          {/* <IconFont>&#xe63d;</IconFont> */}
+                          <Text className='desc'>登录领取会员积分</Text>
+                      </View>
+                  </View>
               </View>
           </View>
           <View className='profile-content'>
@@ -48,7 +54,7 @@ export default function Profile() {
                   </View>
                   <View className='card-item'>
                       <View className='item-left'>
-                      <IconFont>&#xe6c0;</IconFont>
+                        <IconFont className='icon'>&#xe6c0;</IconFont>
                           <Text className='title'>邀请有礼</Text>
                       </View>
                       <IconFont className='action'>&#xe604;</IconFont>

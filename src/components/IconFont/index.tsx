@@ -8,8 +8,8 @@ interface PropsType {
     children?: React.ReactNode;
     className?: string;
 }
-function IconFont({name, size = 24, children, className}: PropsType) {
-    return <Text className={classNames('iconfont', className)} style={{ fontSize: size , fontFamily: "iconfont", fontStyle: "normal"}}>{ name || children }</Text>;
+function IconFont({name, children, className}: PropsType) {
+    return <Text className={classNames('iconfont', className)} style={{ fontFamily: "iconfont", fontStyle: "normal"}}>{ name || children }</Text>;
 }
 
 export default IconFont;

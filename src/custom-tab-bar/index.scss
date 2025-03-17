@@ -20,12 +20,16 @@
     padding: 10px;
     color: #3f3f3f;
 
+    .iconfont {
+      font-size: 34px;
+    }
+
     &.selected {
       color: RGBA(143,143,255,1);
     }
 
     &-text {
-      font-size: 20px;
+      font-size: 24px;
       margin-top: 8px;
     }
   }

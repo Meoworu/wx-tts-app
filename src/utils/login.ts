@@ -83,3 +83,4 @@ export const saveUserInfo = (res: Taro.getUserInfo.SuccessCallbackResult) => {
 export const getStoredUserInfo = () => {
     return Taro.getStorageSync('userInfo') as UserInfo;
 };
+
