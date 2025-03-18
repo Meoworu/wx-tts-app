@@ -1,6 +1,7 @@
 import { View, Text } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
 import NavigationBar from '../../components/NavigationBar'
+import Background from '@/components/Background'
 
 export default function Tools() {
   useLoad(() => {
@@ -12,6 +13,7 @@ export default function Tools() {
       <NavigationBar
         title='工具'
       />
+          <Background />
       <Text>工具页面</Text>
     </View>
   )

@@ -84,3 +84,12 @@ export const getStoredUserInfo = () => {
     return Taro.getStorageSync('userInfo') as UserInfo;
 };
 
+export function getPhoneNumber(e) {
+    if (e.detail.errMsg === 'getPhoneNumber:ok') {
+      console.log('加密数据:', e.detail.encryptedData);
+      console.log('初始向量:', e.detail.iv);
+      // 将 encryptedData 和 iv 发送到服务器进行解密
+    } else {
+      console.log('用户拒绝授权');
+    }
+}

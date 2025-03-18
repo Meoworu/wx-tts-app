@@ -25,7 +25,7 @@ export default function VoiceList() {
         </View>
       ))}
           <View key='more' className='voice-item'>
-          <IconFont size={40} className='voice-avatar'>&#xe649;</IconFont>
+          <IconFont className='voice-avatar'>&#xe649;</IconFont>
           <View className='voice-name'>更多</View>
         </View>
     </View>

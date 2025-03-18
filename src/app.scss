@@ -19,6 +19,7 @@ View,Text{
   background: linear-gradient(90deg, $button-bg-color, $button-bg-color-1) !important;
   border:none;
   font-size: 28px;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
 }
 
 .creation-page{

@@ -929,6 +929,13 @@
     core-js-pure "^3.30.2"
     regenerator-runtime "^0.14.0"
 
+"@babel/runtime@^7.14.5":
+  version "7.26.10"
+  resolved "http://npmrepo.corp.qunar.com:80/artifactory/api/npm/npm-qunar/@babel/runtime/-/runtime-7.26.10.tgz#a07b4d8fa27af131a633d7b3524db803eb4764c2"
+  integrity sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
 "@babel/runtime@^7.24.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4":
   version "7.26.9"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.26.9.tgz"
@@ -1717,6 +1724,15 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@tarojs/api@3.6.35":
+  version "3.6.35"
+  resolved "http://npmrepo.corp.qunar.com:80/artifactory/api/npm/npm-qunar/@tarojs/api/-/api-3.6.35.tgz#45bfa3046af747255aa57d21e56f2b5532fff096"
+  integrity sha512-RTyI09J2kgQBhjd0H/JtFsWygFIGYUFly88qm+ozQWxsgr9BTOSDpb94eQ/i9OZNFEXxGk8EGk1aLeoqKYOSaw==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@tarojs/runtime" "3.6.35"
+    "@tarojs/shared" "3.6.35"
+
 "@tarojs/api@4.0.9":
   version "4.0.9"
   resolved "https://registry.npmjs.org/@tarojs/api/-/api-4.0.9.tgz"
@@ -2029,6 +2045,14 @@
     rollup "^3.29.4"
     scss-bundle "^3.1.2"
 
+"@tarojs/runtime@3.6.35":
+  version "3.6.35"
+  resolved "http://npmrepo.corp.qunar.com:80/artifactory/api/npm/npm-qunar/@tarojs/runtime/-/runtime-3.6.35.tgz#f807b3278dc412681c1081793da5d1edaf881482"
+  integrity sha512-W8DbKfsChflWoSplYYf8IcWEemjPt6lwTATJn0YzLqSAWhtVfsQ8I5+Dw8qZVzdBxUwJI6WEywOgDgfxUQ0EEg==
+  dependencies:
+    lodash-es "4.17.21"
+    tslib "^2.6.2"
+
 "@tarojs/runtime@4.0.9":
   version "4.0.9"
   resolved "https://registry.npmjs.org/@tarojs/runtime/-/runtime-4.0.9.tgz"
@@ -2051,6 +2075,11 @@
     resolve "^1.22.8"
     tapable "^2.2.1"
     webpack-merge "^5.10.0"
+
+"@tarojs/shared@3.6.35":
+  version "3.6.35"
+  resolved "http://npmrepo.corp.qunar.com:80/artifactory/api/npm/npm-qunar/@tarojs/shared/-/shared-3.6.35.tgz#dd673674f7ab0c8229251cd797036557fcf9ccac"
+  integrity sha512-QqqxEtGAD9QMl62iXHANMYvKntEnx5srdr7xEqOYt21UJode81yv05eIyQ8NEOdmtXXkHJuzXPxivldSSTVDIg==
 
 "@tarojs/shared@4.0.9":
   version "4.0.9"
@@ -2094,6 +2123,13 @@
     "@tarojs/api" "4.0.9"
     "@tarojs/runtime" "4.0.9"
     "@types/postcss-url" "^10.0.4"
+
+"@tarojs/taro@^3":
+  version "3.6.35"
+  resolved "http://npmrepo.corp.qunar.com:80/artifactory/api/npm/npm-qunar/@tarojs/taro/-/taro-3.6.35.tgz#bbc055c81f4e10f99da213d662c00ec4908bbf62"
+  integrity sha512-yT75itfSXwNN6yHgSm0R1M1QXBfiuhFSd16J3PC39uqGwBMshhkWtEqE1zRBhzHK/sIi4Npjrvo3pnYsHIaCKA==
+  dependencies:
+    "@tarojs/api" "3.6.35"
 
 "@tarojs/webpack5-prebundle@4.0.9":
   version "4.0.9"
@@ -3474,14 +3510,9 @@ ci-info@^3.2.0:
   resolved "https://registry.npmjs.org/ci-info/-/ci-info-3.9.0.tgz"
   integrity sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==
 
-classnames@^2.2.5, classnames@^2.2.6:
+classnames@^2.2.5, classnames@^2.2.6, classnames@^2.5.1:
   version "2.5.1"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz"
-  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
-
-classnames@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
   integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
 
 clean-css@^4.2.1:
@@ -9239,9 +9270,9 @@ tar-stream@^1.5.2:
     to-buffer "^1.1.1"
     xtend "^4.0.0"
 
-taro-ui@^3.0.0-alpha:
+taro-ui@^3.3.0:
   version "3.3.0"
-  resolved "https://registry.npmjs.org/taro-ui/-/taro-ui-3.3.0.tgz#2d10e6f53baeacacf1990a07107fab3d65da13f8"
+  resolved "http://npmrepo.corp.qunar.com:80/artifactory/api/npm/npm-qunar/taro-ui/-/taro-ui-3.3.0.tgz#2d10e6f53baeacacf1990a07107fab3d65da13f8"
   integrity sha512-M4tf2OEy1BzmeFyvF0kFOgzzW1Lc86TlQ5UwZh4cNMkuViqGId/DLqY0iMlqAjfXstRn0x4HaFFw91xfLqkPzg==
   dependencies:
     classnames "^2.2.6"
